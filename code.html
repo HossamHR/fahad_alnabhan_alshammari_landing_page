@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Fahad Alnabhan Alshammari - Lawyer</title>
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&amp;family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&amp;family=Noto+Kufi+Arabic:wght@300;400;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#b58712",
+            "background-light": "#f8f7f6",
+            "background-dark": "#1a1a1a", // Slightly tweaked to be more neutral dark for navy blend
+            "surface-dark": "#211d11",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"],
+            "arabic": ["IBM Plex Sans Arabic", "sans-serif"],
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+          backgroundImage: {
+            'navy-gradient': 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    /* Custom Scrollbar for a premium feel */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #383429;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b58712;
+    }
+
+    .glass-panel {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .gold-glow {
+      box-shadow: 0 0 20px -5px rgba(181, 135, 18, 0.3);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-arabic selection:bg-primary selection:text-white">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full glass-panel border-b border-white/5">
+      <div class="flex items-center justify-between p-4 pb-3 max-w-7xl mx-auto w-full">
+        <div class="flex items-center gap-3">
+          <div
+            class="text-primary flex items-center justify-center size-10 rounded-full bg-primary/10 border border-primary/20">
+            <span class="material-symbols-outlined text-[24px]">balance</span>
+          </div>
+          <div>
+            <h2 class="text-white text-base font-bold leading-tight tracking-wide font-display">FAHAD ALNABHAN</h2>
+            <p class="text-primary text-xs font-normal">Lawyer &amp; Legal Consultant</p>
+          </div>
+        </div>
+        <button class="md:hidden text-white/70 hover:text-white transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#" class="text-white hover:text-primary transition-colors text-sm font-medium">الرئيسية</a>
+          <a href="#" class="text-white/70 hover:text-primary transition-colors text-sm font-medium">خدماتنا</a>
+          <a href="#" class="text-white/70 hover:text-primary transition-colors text-sm font-medium">الموقع</a>
+          <a href="#" class="text-white/70 hover:text-primary transition-colors text-sm font-medium">تواصل معنا</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative w-full bg-navy-gradient overflow-hidden">
+      <!-- Decorative Background Elements -->
+      <div
+        class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-900/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2">
+      </div>
+
+      <div class="max-w-7xl mx-auto w-full relative z-10 px-6 py-12 md:py-24">
+        <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-12 md:gap-20">
+          <!-- Portrait Area -->
+          <div class="relative group">
+            <div
+              class="absolute -inset-4 rounded-full bg-gradient-to-br from-primary via-transparent to-primary/30 opacity-20 blur-2xl transition duration-500 group-hover:opacity-40">
+            </div>
+            <div
+              class="relative w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-[#1e293b]">
+              <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                style="background-image: url('assets/personal_image.jpg');"></div>
+            </div>
+            <div
+              class="absolute bottom-4 right-4 md:bottom-10 md:right-10 bg-primary text-white text-sm font-bold px-4 py-1.5 rounded-full border-2 border-background-dark shadow-xl flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+              <span>موثوق</span>
+            </div>
+          </div>
+          <!-- Text Content -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-right gap-6 md:max-w-2xl">
+            <div class="flex flex-col gap-2">
+              <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight tracking-tight">
+                فهد النبهان الشمري
+              </h1>
+              <span class="text-primary text-xl md:text-2xl font-medium">محامٍ ومستشار قانوني</span>
+            </div>
+            <p class="text-slate-300 text-base md:text-lg font-light leading-relaxed max-w-[45ch] opacity-90">
+              خبرة قانونية موثوقة للدفاع عن الحقوق وتمثيل العملاء أمام المحاكم في دولة الكويت. نؤمن بالعدالة ونسعى
+              لتحقيقها بأعلى معايير المهنية.
+            </p>
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row w-full gap-4 mt-4">
+              <button
+                class="flex-1 flex cursor-pointer items-center justify-center rounded-xl h-16 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 hover:bg-[#c69519] hover:-translate-y-1 transition-all active:scale-[0.98] group">
+                <span class="material-symbols-outlined ml-2 group-hover:animate-pulse">call</span>
+                <span>اتصل الآن: 5140 0544 965+</span>
+              </button>
+              <button
+                class="flex-1 flex cursor-pointer items-center justify-center rounded-xl h-16 bg-white/5 border border-white/10 text-white text-lg font-bold hover:bg-white/10 hover:-translate-y-1 transition-all backdrop-blur-sm active:scale-[0.98]">
+                <span class="material-symbols-outlined ml-2 text-primary">mail</span>
+                <span>طلب استشارة قانونية</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent w-full"></div>
+
+    <!-- Social & Contact Grid -->
+    <section class="py-16 px-6 max-w-7xl mx-auto w-full">
+      <h3 class="text-white/60 text-sm font-bold uppercase tracking-[0.2em] mb-10 text-center">تواصل معنا عبر</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- WhatsApp -->
+        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
+          href="#">
+          <div
+            class="size-16 rounded-2xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366] group-hover:scale-110 group-hover:bg-[#25D366]/20 transition-all">
+            <span class="material-symbols-outlined text-3xl">chat</span>
+          </div>
+          <div class="text-center">
+            <p class="text-white text-lg font-bold">WhatsApp</p>
+            <p class="text-white/40 text-sm">تواصل مباشر</p>
+          </div>
+        </a>
+        <!-- Instagram -->
+        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
+          href="#">
+          <div
+            class="size-16 rounded-2xl bg-pink-600/10 flex items-center justify-center text-pink-500 group-hover:scale-110 group-hover:bg-pink-600/20 transition-all">
+            <span class="material-symbols-outlined text-3xl">photo_camera</span>
+          </div>
+          <div class="text-center">
+            <p class="text-white text-lg font-bold">Instagram</p>
+            <p class="text-white/40 text-sm">@FAHADBINNABHAN</p>
+          </div>
+        </a>
+        <!-- Twitter/X -->
+        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
+          href="#">
+          <div
+            class="size-16 rounded-2xl bg-blue-400/10 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-400/20 transition-all">
+            <span class="material-symbols-outlined text-3xl">share</span>
+          </div>
+          <div class="text-center">
+            <p class="text-white text-lg font-bold">Twitter</p>
+            <p class="text-white/40 text-sm">أحدث الأخبار</p>
+          </div>
+        </a>
+        <!-- Location -->
+        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
+          href="#">
+          <div
+            class="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/20 transition-all">
+            <span class="material-symbols-outlined text-3xl">location_on</span>
+          </div>
+          <div class="text-center">
+            <p class="text-white text-lg font-bold">الموقع</p>
+            <p class="text-white/40 text-sm">مدينة الكويت</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="pb-24 px-6 max-w-7xl mx-auto w-full">
+      <div
+        class="grid md:grid-cols-2 gap-8 items-center bg-[#1e1e1e] p-2 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
+        <div class="relative w-full aspect-square md:aspect-video rounded-[2rem] overflow-hidden bg-[#0f172a]">
+          <!-- Simulated Dark Map -->
+          <div class="absolute inset-0 opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0lIIPtS_b8GHPZRDk7SCpxOdsRCqtTlPSCm3_XwzEAj26ByM6zcFjjlAkyQ3xtLKndPbbGirECus0BJKupRQPzZkrKAcrTMlJztYJWZZPBv8tenAkkk8yA1WqOmKQ-ktpxviAG0XY-VZPeQIwmDQqH8Yb0QIRkuXs_x_a425dKdMp7OoE-To6mA3lhmMkRn_tXN5rfs_VpMU8ZFR6qDZRYEhi2CAtX28JBi8-EuG84vlJ_0CNFrufMytqABHXWoPApPxhCDbBMSQ'); background-size: cover; background-position: center;">
+          </div>
+
+          <!-- Map Pin -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+            <div class="size-12 bg-primary/20 rounded-full animate-ping absolute"></div>
+            <div
+              class="size-12 bg-primary rounded-full flex items-center justify-center text-white shadow-2xl border-4 border-[#1e1e1e] z-10">
+              <span class="material-symbols-outlined text-2xl">location_on</span>
+            </div>
+            <div class="mt-4 bg-white text-black text-xs font-bold px-4 py-2 rounded-xl shadow-2xl backdrop-blur-md">
+              مكتب المحامي فهد النبهان
+            </div>
+          </div>
+
+          <div class="absolute bottom-6 right-6 left-6 md:right-auto md:w-64">
+            <button
+              class="w-full bg-white/10 backdrop-blur-xl border border-white/20 text-white text-sm font-bold py-4 rounded-2xl hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">map</span>
+              فتح في خرائط جوجل
+            </button>
+          </div>
+        </div>
+
+        <div class="p-8 md:p-12 flex flex-col gap-8">
+          <div class="flex flex-col gap-4">
+            <h4 class="text-white text-3xl font-bold">تفضل بزيارتنا</h4>
+            <p class="text-white/60 leading-relaxed">يسعدنا استقبالكم في مكتبنا لمناقشة قضاياكم وتقديم أفضل الحلول
+              القانونية التي تضمن حقوقكم.</p>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <div class="flex items-center gap-4">
+              <div class="size-12 rounded-xl bg-white/5 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">schedule</span>
+              </div>
+              <div>
+                <p class="text-white font-bold">أوقات العمل</p>
+                <p class="text-white/40 text-sm">الأحد - الخميس: 9:00 ص - 9:00 م</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="size-12 rounded-xl bg-white/5 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">place</span>
+              </div>
+              <div>
+                <p class="text-white font-bold">العنوان</p>
+                <p class="text-white/40 text-sm">مدينة الكويت، المنطقة التجارية</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-white/20 text-sm">© 2024 Fahad Alnabhan Law Firm. All rights reserved.</p>
+      </div>
+    </section>
+    <!-- Sticky FAB -->
+    <div class="fixed bottom-8 right-8 z-40">
+      <button
+        class="flex items-center justify-center size-16 md:size-20 rounded-full bg-primary text-white shadow-2xl shadow-primary/40 hover:scale-110 hover:shadow-primary/60 transition-all duration-300 animate-bounce cursor-pointer group">
+        <span
+          class="material-symbols-outlined text-3xl md:text-4xl group-hover:rotate-12 transition-transform">call</span>
+      </button>
+    </div>
+    <!-- Sticky Bottom Nav (Mobile Only) -->
+    <div
+      class="fixed bottom-0 w-full bg-[#1a1a1a]/95 backdrop-blur-xl border-t border-white/5 p-4 z-30 flex justify-around items-center md:hidden">
+      <button class="flex flex-col items-center text-primary gap-1">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px] font-bold">الرئيسية</span>
+      </button>
+      <button class="flex flex-col items-center text-white/40 hover:text-white transition-colors gap-1">
+        <span class="material-symbols-outlined">gavel</span>
+        <span class="text-[10px] font-bold">خدماتنا</span>
+      </button>
+      <div class="w-12"></div> <!-- Spacer for FAB -->
+      <button class="flex flex-col items-center text-white/40 hover:text-white transition-colors gap-1">
+        <span class="material-symbols-outlined">location_on</span>
+        <span class="text-[10px] font-bold">الموقع</span>
+      </button>
+      <button class="flex flex-col items-center text-white/40 hover:text-white transition-colors gap-1">
+        <span class="material-symbols-outlined">chat</span>
+        <span class="text-[10px] font-bold">تواصل</span>
+      </button>
+    </div>
+  </div>
+  <!-- Script to handle fallback images or simple interactions if strictly necessary, keeping it minimal as requested -->
+  <script>
+    // No JS logic added as requested to keep it purely CSS/HTML where possible.
+  </script>
+</body>
+
+</html>

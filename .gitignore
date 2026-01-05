@@ -2,9 +2,7 @@
 .DS_Store
 Thumbs.db
 
-# Project Assets
-/assets/
-
 # (Optional) If you use local dev tools
+
 node_modules/
 .env

@@ -25,18 +25,19 @@
       theme: {
         extend: {
           colors: {
-            "primary": "#b58712",
-            "background-light": "#f8f7f6",
-            "background-dark": "#1a1a1a", // Slightly tweaked to be more neutral dark for navy blend
-            "surface-dark": "#211d11",
+            "primary": "#C5A059", // Lustrous Gold
+            "background-light": "#FDFCFB",
+            "background-dark": "#0F172A", // Midnight Navy
+            "surface-dark": "#1E293B", // Deeper Navy/Slate
           },
           fontFamily: {
             "display": ["Public Sans", "sans-serif"],
             "arabic": ["IBM Plex Sans Arabic", "sans-serif"],
           },
-          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+          borderRadius: { "DEFAULT": "0.375rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px" },
           backgroundImage: {
-            'navy-gradient': 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+            'premium-gradient': 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
+            'gold-gradient': 'linear-gradient(90deg, #C5A059 0%, #E2C792 100%)',
           }
         },
       },
@@ -45,31 +46,40 @@
   <style>
     /* Custom Scrollbar for a premium feel */
     ::-webkit-scrollbar {
-      width: 8px;
+      width: 6px;
     }
 
     ::-webkit-scrollbar-track {
-      background: #1a1a1a;
+      background: #0F172A;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #383429;
-      border-radius: 4px;
+      background: #1E293B;
+      border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: #b58712;
+      background: #C5A059;
     }
 
     .glass-panel {
-      background: rgba(30, 41, 59, 0.7);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    .gold-glow {
-      box-shadow: 0 0 20px -5px rgba(181, 135, 18, 0.3);
+    .premium-card {
+      background: rgba(30, 41, 59, 0.4);
+      border: 1px solid rgba(197, 160, 89, 0.1);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+
+    .premium-card:hover {
+      border-color: rgba(197, 160, 89, 0.3);
+      background: rgba(30, 41, 59, 0.6);
+      transform: translateY(-4px);
     }
   </style>
   <style>
@@ -107,7 +117,7 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <section class="relative w-full bg-navy-gradient overflow-hidden">
+    <section class="relative w-full bg-premium-gradient overflow-hidden">
       <!-- Decorative Background Elements -->
       <div
         class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2">
@@ -124,8 +134,8 @@
               class="absolute -inset-4 rounded-full bg-gradient-to-br from-primary via-transparent to-primary/30 opacity-20 blur-2xl transition duration-500 group-hover:opacity-40">
             </div>
             <div
-              class="relative w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-[#1e293b]">
-              <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+              class="relative w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-surface-dark">
+              <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 style="background-image: url('assets/personal_image.jpg');"></div>
             </div>
             <div
@@ -140,7 +150,7 @@
               <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight tracking-tight">
                 فهد النبهان الشمري
               </h1>
-              <span class="text-primary text-xl md:text-2xl font-medium">محامٍ ومستشار قانوني</span>
+              <span class="text-primary text-xl md:text-2xl font-medium tracking-wide">محامٍ ومستشار قانوني</span>
             </div>
             <p class="text-slate-300 text-base md:text-lg font-light leading-relaxed max-w-[45ch] opacity-90">
               خبرة قانونية موثوقة للدفاع عن الحقوق وتمثيل العملاء أمام المحاكم في دولة الكويت. نؤمن بالعدالة ونسعى
@@ -149,7 +159,7 @@
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row w-full gap-4 mt-4">
               <button
-                class="flex-1 flex cursor-pointer items-center justify-center rounded-xl h-16 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 hover:bg-[#c69519] hover:-translate-y-1 transition-all active:scale-[0.98] group">
+                class="flex-1 flex cursor-pointer items-center justify-center rounded-xl h-16 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 hover:bg-[#B68F4A] hover:-translate-y-1 transition-all active:scale-[0.98] group">
                 <span class="material-symbols-outlined ml-2 group-hover:animate-pulse">call</span>
                 <span>اتصل الآن: 5140 0544 965+</span>
               </button>
@@ -164,15 +174,14 @@
       </div>
     </section>
 
-    <div class="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent w-full"></div>
+    <div class="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent w-full"></div>
 
     <!-- Social & Contact Grid -->
     <section class="py-16 px-6 max-w-7xl mx-auto w-full">
       <h3 class="text-white/60 text-sm font-bold uppercase tracking-[0.2em] mb-10 text-center">تواصل معنا عبر</h3>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
         <!-- WhatsApp -->
-        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
-          href="#">
+        <a class="flex flex-col items-center gap-4 premium-card p-8 rounded-[2rem] group" href="#">
           <div
             class="size-16 rounded-2xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366] group-hover:scale-110 group-hover:bg-[#25D366]/20 transition-all">
             <span class="material-symbols-outlined text-3xl">chat</span>
@@ -183,8 +192,7 @@
           </div>
         </a>
         <!-- Instagram -->
-        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
-          href="#">
+        <a class="flex flex-col items-center gap-4 premium-card p-8 rounded-[2rem] group" href="#">
           <div
             class="size-16 rounded-2xl bg-pink-600/10 flex items-center justify-center text-pink-500 group-hover:scale-110 group-hover:bg-pink-600/20 transition-all">
             <span class="material-symbols-outlined text-3xl">photo_camera</span>
@@ -195,8 +203,7 @@
           </div>
         </a>
         <!-- Twitter/X -->
-        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
-          href="#">
+        <a class="flex flex-col items-center gap-4 premium-card p-8 rounded-[2rem] group" href="#">
           <div
             class="size-16 rounded-2xl bg-blue-400/10 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-400/20 transition-all">
             <span class="material-symbols-outlined text-3xl">share</span>
@@ -207,8 +214,7 @@
           </div>
         </a>
         <!-- Location -->
-        <a class="flex flex-col items-center gap-4 bg-[#1e1e1e] border border-white/5 p-8 rounded-3xl hover:bg-[#252525] hover:border-primary/30 transition-all duration-300 group"
-          href="#">
+        <a class="flex flex-col items-center gap-4 premium-card p-8 rounded-[2rem] group" href="#">
           <div
             class="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/20 transition-all">
             <span class="material-symbols-outlined text-3xl">location_on</span>
@@ -224,8 +230,8 @@
     <!-- Map Section -->
     <section class="pb-24 px-6 max-w-7xl mx-auto w-full">
       <div
-        class="grid md:grid-cols-2 gap-8 items-center bg-[#1e1e1e] p-2 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
-        <div class="relative w-full aspect-square md:aspect-video rounded-[2rem] overflow-hidden bg-[#0f172a]">
+        class="grid md:grid-cols-2 gap-8 items-center bg-surface-dark/40 p-3 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
+        <div class="relative w-full aspect-square md:aspect-video rounded-[2rem] overflow-hidden bg-background-dark">
           <!-- Simulated Dark Map -->
           <div class="absolute inset-0 opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700"
             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0lIIPtS_b8GHPZRDk7SCpxOdsRCqtTlPSCm3_XwzEAj26ByM6zcFjjlAkyQ3xtLKndPbbGirECus0BJKupRQPzZkrKAcrTMlJztYJWZZPBv8tenAkkk8yA1WqOmKQ-ktpxviAG0XY-VZPeQIwmDQqH8Yb0QIRkuXs_x_a425dKdMp7OoE-To6mA3lhmMkRn_tXN5rfs_VpMU8ZFR6qDZRYEhi2CAtX28JBi8-EuG84vlJ_0CNFrufMytqABHXWoPApPxhCDbBMSQ'); background-size: cover; background-position: center;">
@@ -235,7 +241,7 @@
           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
             <div class="size-12 bg-primary/20 rounded-full animate-ping absolute"></div>
             <div
-              class="size-12 bg-primary rounded-full flex items-center justify-center text-white shadow-2xl border-4 border-[#1e1e1e] z-10">
+              class="size-12 bg-primary rounded-full flex items-center justify-center text-white shadow-2xl border-4 border-surface-dark z-10">
               <span class="material-symbols-outlined text-2xl">location_on</span>
             </div>
             <div class="mt-4 bg-white text-black text-xs font-bold px-4 py-2 rounded-xl shadow-2xl backdrop-blur-md">
@@ -296,7 +302,7 @@
     </div>
     <!-- Sticky Bottom Nav (Mobile Only) -->
     <div
-      class="fixed bottom-0 w-full bg-[#1a1a1a]/95 backdrop-blur-xl border-t border-white/5 p-4 z-30 flex justify-around items-center md:hidden">
+      class="fixed bottom-0 w-full bg-background-dark/95 backdrop-blur-xl border-t border-white/5 p-4 z-30 flex justify-around items-center md:hidden">
       <button class="flex flex-col items-center text-primary gap-1">
         <span class="material-symbols-outlined">home</span>
         <span class="text-[10px] font-bold">الرئيسية</span>
